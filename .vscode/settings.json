@@ -5,6 +5,23 @@
         "--compile-commands-dir=${workspaceFolder}/build"
     ],
     "xmake.debugConfigType": "codelldb",
-    // "xmake.runMode": "buildRun",
-    "xmake.compileCommandsDirectory": "${workspaceRoot}/build"
+    "xmake.compileCommandsDirectory": "${workspaceRoot}/build",
+    "xmake.runningTargetsArguments": {
+        "hello_server": [
+            "9012"
+        ],
+        "hello_client": [
+            "127.0.0.1",
+            "9012"
+        ]
+    },
+    "xmake.debuggingTargetsArguments": {
+        "hello_server": [
+            "9012"
+        ],
+        "hello_client": [
+            "127.0.0.1",
+            "9012"
+        ]
+    }
 }

@@ -1,3 +1,7 @@
-target("socket")
+target("hello_server")
     set_kind("binary")
-    add_files("main.cpp")
+    add_files("hello_server.cpp")
+
+target("hello_client")
+    set_kind("binary")
+    add_files("hello_client.cpp")
